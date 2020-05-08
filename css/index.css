@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+/********** 공통사항 **********/
+body {font-family: 'Lato', sans-serif; }
+
+/* *******************header-wrap************************ */
+.header {opacity: ;}
+.logo {font-size:30px; float: left; padding: 30px 20px;}
+.logo:hover{cursor: pointer;}
+.navi-wrap {float: left; padding: 30px 200px;}
+.navi {float: left; padding: 16px 24px 32px 24px; cursor: pointer;}
+.search-wrap {float: right;padding: 30px 20px; cursor: pointer;}
+
+.search-wrap > .fa-clipboard{padding: 8px; cursor: pointer;} 
+.search-wrap > .fa-search{padding: 8px; cursor: pointer;} 
+.search-wrap > .fa-bars{padding: 8px; cursor: pointer;} 
+
+/* *******************main-wrap************************ */
+.main-wrap{
+  height: 100vh;
+  background-image: url('../img/back1.jpg'); text-align: center;}
+  .mains {padding-top: 10%;}
+  .main-logo {color: white; font-size: 100px; padding-top: 10%;}
+  .main-slogan {color: white; padding-bottom: 20px;}
+  .bts > button{padding: 10px 60px;border: none; color: gray;}
+  button:hover {cursor: pointer; background-color: rgb(236, 176, 176); color: white; }
+  .icon > span{color: white; font-size: 9px; padding: 180px 6px;}
+  .icon > span:hover{color: pink; cursor: pointer;}
+
+  
+  /* *******************best-wrap************************ */
+
+.best-wrap {text-align: center; padding: 60px;}
+.best-wrap > .logo {font-size: 80px;}
+.best-wrap > .best-slogan {color: gray; font-style: italic; padding-top: 10px; padding-bottom: 60px;}
+
+.photos {width: 100%; margin-left: -0.5% ; padding-left: 28%;}
+.photo{width: 24%; margin: 0.5%; float: left; text-align: center;}
+.photo > .name {padding: 20px; font-size: 18px;}
+.photo > .desc {padding-bottom: 20px; color: #777777; font-size: 12px;}
+.photo > button {border: none; background-color: white; font-size: 12px; ZZ}
+.photo > button:hover{color: pink;}
+
