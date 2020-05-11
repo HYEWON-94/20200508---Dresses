@@ -1,44 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Oswald:wght@400;500;600&display=swap');
 
+/* font-family: 'Nanum Myeongjo', serif;
+font-family: 'Oswald', sans-serif; */
 /********** 공통사항 **********/
-body {font-family: 'Lato', sans-serif; }
+body {font-family: 'Nanum Myeongjo', serif; height: 5000px; }
+
+.wrapper {max-width: 1100px; padding: 80px 16px; margin: auto;}
 
 /* *******************header-wrap************************ */
-.header {opacity: ;}
-.logo {font-size:30px; float: left; padding: 30px 20px;}
+.header {background-color: white; color: white;}
+.logo {font-size: 35px; font-family: 'Nanum Myeongjo', serif; float: left; padding: 36px 40px; font-weight: 700;}
 .logo:hover{cursor: pointer;}
-.navi-wrap {float: left; padding: 30px 200px;}
-.navi {float: left; padding: 16px 24px 32px 24px; cursor: pointer;}
-.search-wrap {float: right;padding: 30px 20px; cursor: pointer;}
+.navi-wrap {float: left; padding-left: 130px; padding-top: 20px;}
+.navi {float: left; padding: 15px 20px; font-family: 'Oswald', sans-serif; letter-spacing: 3px;}
+.navi:hover{cursor: pointer;}
+.sch-wrap {float: right; font-size: 24px; padding: 36px 40px;}
+.sch-wrap > span {padding-left: 20px;}
 
-.search-wrap > .fa-clipboard{padding: 8px; cursor: pointer;} 
-.search-wrap > .fa-search{padding: 8px; cursor: pointer;} 
-.search-wrap > .fa-bars{padding: 8px; cursor: pointer;} 
+
+
 
 /* *******************main-wrap************************ */
-.main-wrap{
-  height: 100vh;
-  background-image: url('../img/back1.jpg'); text-align: center;}
-  .mains {padding-top: 10%;}
-  .main-logo {color: white; font-size: 100px; padding-top: 10%;}
-  .main-slogan {color: white; padding-bottom: 20px;}
-  .bts > button{padding: 10px 60px;border: none; color: gray;}
-  button:hover {cursor: pointer; background-color: rgb(236, 176, 176); color: white; }
-  .icon > span{color: white; font-size: 9px; padding: 180px 6px;}
-  .icon > span:hover{color: pink; cursor: pointer;}
 
-  
-  /* *******************best-wrap************************ */
+.main-wrap{max-width: 1400px;
+    height: 100vh;
+    background-image: url('../img/h7.jpg'); 
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;	
+    text-align: center;
+  ;}
 
-.best-wrap {text-align: center; padding: 60px;}
-.best-wrap > .logo {font-size: 80px;}
-.best-wrap > .best-slogan {color: gray; font-style: italic; padding-top: 10px; padding-bottom: 60px;}
+.main-title {font-size: 100px;font-weight: 800; color: white; font-family: 'Nanum Myeongjo', serif; padding-bottom: 20px; padding-top: 17%;}
+.main-desc {color: white; font-weight: 600; font-size: 20px; padding-bottom: 35px;}
+.bts > button{padding: 15px 60px;border: none; color: gray;font-size: 16px; font-family: 'Nanum Myeongjo', serif;}
+.bts > button:hover{color: white; cursor: pointer; background-color: pink;}
+.main-icon > span{color: white; font-size: 9px; padding-top: 80px;letter-spacing: 8px;}
+.main-icon > span:hover{color: pink; cursor: pointer;}
 
-.photos {width: 100%; margin-left: -0.5% ; padding-left: 28%;}
-.photo{width: 24%; margin: 0.5%; float: left; text-align: center;}
-.photo > .name {padding: 20px; font-size: 18px;}
-.photo > .desc {padding-bottom: 20px; color: #777777; font-size: 12px;}
-.photo > button {border: none; background-color: white; font-size: 12px; ZZ}
-.photo > button:hover{color: pink;}
 
+/* *******************best-wrap************************ */
+.best-title {font-size: 60px; text-align: center;font-weight: 600;font-family: 'Nanum Myeongjo', serif;}
+.best-slogan {text-align: center; padding-top: 10px; font-style: italic; color: #999999;}
+.photos {padding-top: 60px; width: 33.3333%; float: left; padding-left: 32px;}
+.pto-title {text-align: center;padding-top: 30px; font-size: 24px;}
+.pto-desc {text-align: center; padding-top: 20px; font-size: 15px; color: gray;line-height: 25px;}
+.pto-bts > button {border: none; background-color: white; 
+    font-size: 12px;text-align: center; padding-top: 20px;}
+.pto-bts > button:hover{color: pink; cursor: pointer;}
+
+/* *******************list-wrap************************ */
+
+.list-wrap{margin-top: 500px;max-width: 1500px;
+    height: 50px;
+    background-image: url('../img/ba4.jpg'); 
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;	
+    text-align: center;
+padding-top: 50%;
+
+}
+
+.lists {color: white; float: left; padding-left: 80px;
+ float: left; width: 25%;}
+.lists > .img
+.list-title {font-size: 20px; padding: 15px;line-height: 5px;}
+
+
+
+/* *******************submit-wrap************************ */
+.sub-wrap {width: 100%;}
+.sub-wrap{float: left;}
+.sub-pto{float: left;padding-left: 250px;}
+.sub-rit {padding-top: 50px; padding-left:50%;}
+.sub-title{padding-bottom: 16px; font-size: 60px;}
+.sub-slogan {padding-bottom:16px; padding-left: 200px; color: gray; font-style: italic;}
+.sub-desc {padding-bottom: 30px; line-height: 25px; color: gray;}
+.sub-btn {padding-left: 130px;}
+.sub-btn > button{border: none; font-size: 16px;padding: 16px 65px;
+   text-align: center; color: gray;}
+   .sub-btn > button:hover{background-color: pink; color: white; cursor: pointer;}
+
+
+
+
+
+/* *******************slide-wrap************************ */
+.slide {width: 100%;
+overflow: hidden;
+margin: 0 auto;
+position: relative;
+float: left;}
+.slide > ul { padding-top: 120px; width: 25.5555%; float: right;}
+.slide > ul > li {float: left; display: inline-block;}
+ul > li > .img {float: left;}
+/* *******************fnd-wrap************************ */
+
+.fnd-wrap {padding-top: 50px; text-align: center; margin-top: 60px;}
+.fnd-deco {font-size: 60px;}
+.fnd-title {font-size: 36px;padding-bottom: 26px;}
+.fnd-desc {color: gray;line-height: 25px;}
+.fnd-name {font-size: 20px; padding: 16px;}
+.fnd-work {color: gray; font-style: italic;}
+.fnd-icon {padding-left:20px ;}
+.fnd-icon > span {letter-spacing: 10px; font-size: 13px; color: rgb(224, 224, 224); padding-top: 50px;}
+.fnd-icon > span:hover{color: pink; cursor: pointer;}
+
+
+/* *******************imge-wrap************************ */
+.imge-wrap {background-color: rgb(223, 221, 221); max-width: 1600px;
+  height: 35vh; position: relative;}
+.imges {text-align: center; float: left; max-width: 1600px;position: absolute;
+padding: 40px;letter-spacing: 150px;padding-left: 100px;}
+
+
+
+/* *******************footer************************ */
+.footer {background-color: rgb(31, 31, 31);}
+.footers {padding: 80px 100px;}
+.post {text-align: center;}
+.post-title {color: white; font-size: 26px; padding-bottom: 30px;}
+.post:hover{cursor: pointer;}
+.post-slogan {color: gray; padding-bottom: 15px;}
+.post-slogan:hover{cursor: pointer; color: pink;}
+
+.post-day {color: white; padding-bottom: 25px;}
+
+.green {text-align: center;}
+.green-title {color: white; font-size: 45px; padding-bottom: 30px;}
+.green-desc {color:gray;line-height: 25px;padding-bottom: 25px;}
+
+.mail {color: gray;font-style: italic;padding-bottom: 10px;}
+.mail > span {color: white;}
+.mail > span:hover{cursor: pointer;color: pink;}
+.phone {color: gray;font-style: italic;padding-bottom: 10px;}
+.phone > span:hover{cursor: pointer;color: pink;}
+.phone > span {color: white;}
+.adress {color: gray;font-style: italic;padding-bottom: 10px;}
+.adress > span:hover{cursor: pointer;color: pink;}
+.adress > span {color: white;}
+
+.link {text-align: center;}
+.link-title {color: white;font-size: 26px;padding-bottom: 20px;}
+.link1 {color: gray;padding-bottom: 10px;}
+.link1:hover{cursor: pointer; color: pink;}
+.link2 {color: gray;padding-bottom: 10px;}
+.link2:hover{cursor: pointer; color: pink;}
+.link3 {color: gray;padding-bottom: 10px;}
+.link3:hover{cursor: pointer; color: pink;}
+.link4 {color: gray;padding-bottom: 10px;}
+.link4:hover{cursor: pointer; color: pink;}
+
+.copyrigt {color: white; text-align: center; padding-top:8%;}
+.copy > span:hover{color: pink;cursor: pointer;}
