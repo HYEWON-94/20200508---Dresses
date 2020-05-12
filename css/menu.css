@@ -1,0 +1,52 @@
+div, ul, li { margin:0; padding:0; }
+
+#blogMenu {
+	float: left;
+	margin:0px 0px;
+	padding:0 100px 0 100px;
+  background-color:#5c5c5c;
+  
+}
+
+#blogMenu ul li {
+	float:left;
+  list-style-type:none;
+  padding: 8px 0;
+  
+}
+
+
+
+
+#blogMenu a { float: left; font-family: 'Oswald', sans-serif; color: white; 
+	height:16px;
+	font-size:30pxpx;
+	padding:20px 100px 0 100px;
+	text-decoration:none;
+}
+
+.main-title{font-size: 36px; float: left; color: white}
+
+#blogMenu a:hover {
+  
+}
+
+#blogMenu ul ul {
+  display:none;
+  padding-
+	position:absolute;
+	background-color:#5c5c5c;
+}
+
+#blogMenu ul li:hover ul {
+  display: block;
+
+  
+}
+
+#blogMenu ul ul li {
+	float:none;
+}
+
+.search-wrap {float: right; color: white; font-size: 20px;}
+.search-wrap > span {padding-left: 13px;}

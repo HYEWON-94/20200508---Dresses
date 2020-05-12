@@ -9,10 +9,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/zindex.css">
+  <script src="../jquery-3.5.1.min.js"></script>
+
+
+
+
 </head>
 
 
+
+
 <body>
+  
+  
+
+
+
+
+
+  
 	<header class="header clear">
     <div class="wrapper">
     <div class="logo">Gretna Green</div>
@@ -32,6 +47,45 @@
   </div><!-- wrapper -->
   </header><!-- header -->
   
+
+
+  <div id="slide" val="1" mx="3">
+
+    <li id="img1"><img src="../img/h7-slider-2-background-img.jpg" alt=""/></li>
+  
+    <li id="img2"><img src="../img/h7-slider-3-background-img.jpg" alt=""/></li>
+  
+    <li id="img3"><img src="../img/h7.jpg" alt=""/></li>
+  
+  </div>
+
+  <script type="text/javascript"> 
+
+    imgslide(); //페이지가 로딩될때 함수를 실행합니다
+    
+    function imgslide(){
+    
+      $val = $("#slide").attr("val"); //현재 이미지 번호를 가져옵니다
+    
+      $mx = $("#slide").attr("mx"); //총 이미지 개수를 가져옵니다
+    
+      $("#img"+$val).hide(); //현재 이미지를 사라지게 합니다.
+    
+      if( $val == $mx ){ $val = 1; } //현재이미지가 마지막 번호라면 1번으로 되돌립니다.
+    
+      else{ $val++; } //마지막 번호가 아니라면 카운트를 증가시켜줍니다
+    
+      $("#img"+$val).fadeIn(2000); //변경된 번호의 이미지영역을 나타나게 합니다.괄호 안에 숫자는 페이드인 되는 시간을 나타냅니다.
+    
+      $("#slide").attr('val',$val); //변경된 이미지영역의 번호를 부여합니다.
+    
+      setTimeout('imgslide()',3000); //1초 뒤에 다시 함수를 호출합니다.(숫자값 1000당 1초)
+    
+    }
+    
+    </script>
+
+
   <section class="main-wrap clear">
     <div class="mains">
     <h1 class="main-logo">Gretna Green</h1>
@@ -84,58 +138,31 @@
 
 <section class="list-wrap clear">
   <div class="lists">
-    <img src="../img/h7-custom-icon-img-1 (1).png" alt="아이콘" class="img">
     <div class="icon-lists">
-<div class="list-name">
-    <div class="list-title">Handmade Dresses</div>
-  <div class="list-desc">Condimentum rhoncus semper<br> maecenas, tempus tellus eget
+      <div class="icon-img">
+      <img src="../img/h7-custom-icon-img-1 (1).png" alt="아이콘" class="img">
+    </div>
+ 
+    
+  
 
-  </div><!-- list desc -->
-</div><!-- list-name -->
 </div><!-- icon-lists -->
-  </div><!-- lists -->
   <div class="lists">
     <img src="../img/h7-custom-icon-img-2 (1).png" alt="아이콘" class="img">
     <div class="icon-lists">
-<div class="list-name">
-    <div class="list-title">Elegant Materials</div>
-  <div class="list-desc">Aenean commodo ligula eget dolor<br> cum sociis natoque penatibus
 
-  </div><!-- list desc -->
-</div><!-- list-name -->
 </div><!-- icon-lists -->
   </div><!-- lists -->
   <div class="lists">
     <img src="../img/h7-custom-icon-img-3 (1).png" alt="아이콘" class="img">
     <div class="icon-lists">
-<div class="list-name">
-    <div class="list-title">Custom Design</div>
-  <div class="list-desc">Viverra quis, feugiat a tellus augue<br> aliquam lorem ante dapibus in
 
-  </div><!-- list desc -->
-</div><!-- list-name -->
 </div><!-- icon-lists -->
   </div><!-- lists -->
   <div class="lists">
     <img src="../img/h7-custom-icon-img-4 (1).png" alt="아이콘" class="img">
     <div class="icon-lists">
-<div class="list-name">
-    <div class="list-title">Intricate Details</div>
-  <div class="list-desc">Luctus pulvinar, hendrerit id vel<br> lorem, nam quam nunc blandi
 
-  </div><!-- list desc -->
-</div><!-- list-name -->
-</div><!-- icon-lists -->
-  </div><!-- lists -->
-  <div class="lists">
-    <img src="../img/h7-custom-icon-img-1 (1).png" alt="아이콘" class="img">
-    <div class="icon-lists">
-<div class="list-name">
-    <div class="list-title">Handmade Dresses</div>
-  <div class="list-desc">Condimentum rhoncus semper<br> maecenas, tempus tellus eget
-
-  </div><!-- list desc -->
-</div><!-- list-name -->
 </div><!-- icon-lists -->
   </div><!-- lists -->
 </section><!-- list-wrap -->
@@ -169,9 +196,11 @@
 
 <section class="fnd-wrapper">
   <div class="wrapper">
-    <div class="fnd-deco">"</div>
+    <span class="fas fa-quote-right"></span>
     <div class="fnd-title">Best Friends Forever</div>
-    <div class="fnd-desc">Best Friends Forever</div>
+    <div class="fnd-desc">Etiam rhoncus. Maeccenas tempus, tellus eget condimentum rhoncus, sem<br>qua, semper libero, sit amet adipisc sem neque sed ipsum. Lorem ipsum<br>
+dolor sit amet, consectetuer adipiscing.Aenan commodo lohula eget.
+    </div>
     <div class="fnd-name">Mariane Loren</div>
     <div class="fnd-work">designer</div>
     <div class="fnd-icon">
@@ -184,18 +213,67 @@
 
 
 <section class="client-wrape">
-  <div class="">
-    <div class="clients">
-      <img src="../img/h1-client-img-1.png" alt="clients" class="1" class="imge">
-      <img src="../img/h1-client-img-2.png" alt="clients" class="1" class="imge">
-      <img src="../img/h1-client-img-3.png" alt="clients" class="1" class="imge">
-      <img src="../img/h1-client-img-4.png" alt="clients" class="1" class="imge">
-      <img src="../img/h1-client-img-5.png" alt="clients" class="1" class="imge">
+ <div class="clients">
+   <img src="../img/c1.png" alt="사진" class="imge">
+   <img src="../img/c2.png" alt="사진" class="imge">
+   <img src="../img/c3.png" alt="사진" class="imge">
+   <img src="../img/c4.png" alt="사진" class="imge">
+   <img src="../img/c44.png" alt="사진" class="imge">
+    </div><!-- clients -->
+</section><!-- client-wrap -->
 
-    </div>
-  </div>
+<section class="footer">
+<div class="footers">
+  
+  <div class="post">
+    <div class="post-title">Recent Posts</div>
+    <div class="post-slogan">Spring Color Mood</div>
+    <div class="post-day">10.May 2018.</div>
+    <div class="post-slogan">Double Wedding</div>
+    <div class="post-day">10.May 2018.</div>
+  </div><!-- post -->
+
+  <div class="contacts">
+    <div class="cnt-title">Grentna Green</div>
+    <div class="cnt-slogan">Lorem ipsum dolor sit amet, consectetuer<br> adipiscing elit. Aenean commodo ligula eget<br> dolor aenean massa et ante tincidunt</div>
+ <div class="cnt-email">Email us: <span>info@example.com</span></div>
+ <div class="cnt-phone">Phone us: <span>0408 266 7759</span></div>
+ <div class="cnt-visit">Visit us: <span>20 South Summer St, USA</span></div>
+</div><!-- contacts -->
+ 
+ <div class="link">
+   <div class="link-title">Quick Links</div>
+   <div class="link-slogan">Our Story</div>
+   <div class="link-slogan">Meet The Team</div>
+   <div class="link-slogan">RSVP</div>
+   <div class="link-slogan">Our Services</div>
+ </div>
+ 
+
+ 
+
+  
+</div><!-- footers -->
 </section>
 
+
+
+<div class="top-bts">
+  <button id="btTop class="tbtn"">TOP</button>
+
+</div>
+<script>
+
+$(document).ready(function(){
+  $('a.s_point').smoothScroll();
+  if ( $(document).scrollTop() <50) $(' .to+top').addClass('hide');
+  else $('.to_top').removeClass('hide');
+  $(window).scroll(function(){
+    if ( $(document).scrollTop() <50) $('.to_top').addClass('hide');
+    else $('.to_top').removeClass('hide');
+  });
+});
+</script>
 
 
 </body>
